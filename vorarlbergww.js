@@ -114,7 +114,7 @@ myMap.addControl(myMapControl);
 myMap.addLayer(myLayers.geolandbasemap);
 myMap.setView([47.442016, 9.657747],10);
 
-let gpxTrack = new L.GPX("data/etappe12.gpx", {
+let gpxTrack = new L.GPX("data/lustenau_schmitter.gpx", {
     async : true,
 }).addTo(etappe12group);
 gpxTrack.on("loaded", function(evt) {
@@ -146,7 +146,7 @@ L.control.scale({
 }).addTo(myMap);
 
 // Start- und Endpunkte der Route als Marker mit Popup, Namen, Wikipedia Link und passenden Icons für Start/Ziel von https://mapicons.mapsmarker.com/
-L.marker([47.570246,12.468518],{
+L.marker([47.408761,9.653486],{
     icon : L.icon({
         iconUrl : 'images/start-race-2.png',
         iconAnchor : [16,37],
@@ -156,7 +156,7 @@ L.marker([47.570246,12.468518],{
     '<h3>Erpfendorf</h3><p><a href="https://www.kitzbueheler-alpen.com/de/erpfendorf/erpfendorf-tirol-ortsinformation-zahlen-fakten.html"> Erpfendorf in Tirol - Ortsinformation</a></p>'
 ).addTo(overlayMarker);
 
-L.marker([47.501216,12.4901],{
+L.marker([47.408761,9,653486],{
     icon : L.icon({
         iconUrl : 'images/finish.png',
         iconAnchor : [16,37],
