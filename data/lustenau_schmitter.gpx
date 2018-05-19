@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1" creator="outdooractive - http://www.outdooractive.com">
+    <metadata>
+        <name>Barrierefrei: Am Alten Diepoldsauer Rhein – Rundwanderung Lustenau-Schmitter</name>
+        <author>
+            <name>Helmut Tiefenthaler - Themenwege Vorarlberg</name>
+        </author>
+        <time>2018-04-24T16:14:30</time>
+    </metadata>
+    <trk>
+        <name>Barrierefrei: Am Alten Diepoldsauer Rhein – Rundwanderung Lustenau-Schmitter</name>
+        <trkseg>
+            <trkpt lat="47.408761" lon="9.653486">
+                <ele>409.50792</ele>
+            </trkpt>
+            <trkpt lat="47.407855" lon="9.653457">
+                <ele>410.00392</ele>
+            </trkpt>
+            <trkpt lat="47.406209" lon="9.653399">
+                <ele>406.77210</ele>
+            </trkpt>
+            <trkpt lat="47.404919" lon="9.653223">
+                <ele>409.69948</ele>
+            </trkpt>
+            <trkpt lat="47.404496" lon="9.653250">
+                <ele>410.56403</ele>
+            </trkpt>
+            <trkpt lat="47.404002" lon="9.653180">
+                <ele>411.79054</ele>
+            </trkpt>
+            <trkpt lat="47.403829" lon="9.653201">
+                <ele>412.85974</ele>
+            </trkpt>
+            <trkpt lat="47.403727" lon="9.653314">
+                <ele>414.51047</ele>
+            </trkpt>
+            <trkpt lat="47.403503" lon="9.653841">
+                <ele>417.44532</ele>
+            </trkpt>
+            <trkpt lat="47.403430" lon="9.653932">
+                <ele>417.36877</ele>
+            </trkpt>
+            <trkpt lat="47.401888" lon="9.654968">
+                <ele>406.15225</ele>
+            </trkpt>
+            <trkpt lat="47.399633" lon="9.656642">
+                <ele>409.36011</ele>
+            </trkpt>
+            <trkpt lat="47.399130" lon="9.657076">
+                <ele>407.85101</ele>
+            </trkpt>
+            <trkpt lat="47.398445" lon="9.657740">
+                <ele>407.09502</ele>
+            </trkpt>
+            <trkpt lat="47.397260" lon="9.659118">
+                <ele>408.30617</ele>
+            </trkpt>
+            <trkpt lat="47.396781" lon="9.659852">
+                <ele>410.91790</ele>
+            </trkpt>
+            <trkpt lat="47.396271" lon="9.660796">
+                <ele>408.78818</ele>
+            </trkpt>
+            <trkpt lat="47.395591" lon="9.662383">
+                <ele>408.14854</ele>
+            </trkpt>
+            <trkpt lat="47.395303" lon="9.663183">
+                <ele>408.14854</ele>
+            </trkpt>
+            <trkpt lat="47.394613" lon="9.665310">
+                <ele>408.94526</ele>
+            </trkpt>
+            <trkpt lat="47.394268" lon="9.666488">
+                <ele>407.92586</ele>
+            </trkpt>
+            <trkpt lat="47.394091" lon="9.666979">
+                <ele>408.91390</ele>
+            </trkpt>
+            <trkpt lat="47.393613" lon="9.668596">
+                <ele>412.75301</ele>
+            </trkpt>
+            <trkpt lat="47.393638" lon="9.668647">
+                <ele>412.75301</ele>
+            </trkpt>
+            <trkpt lat="47.394832" lon="9.669557">
+                <ele>410.61570</ele>
+            </trkpt>
+            <trkpt lat="47.394925" lon="9.669582">
+                <ele>410.21517</ele>
+            </trkpt>
+            <trkpt lat="47.395228" lon="9.668465">
+                <ele>408.04949</ele>
+            </trkpt>
+            <trkpt lat="47.395608" lon="9.667371">
+                <ele>406.07935</ele>
+            </trkpt>
+            <trkpt lat="47.397062" lon="9.662880">
+                <ele>407.41143</ele>
+            </trkpt>
+            <trkpt lat="47.397441" lon="9.661881">
+                <ele>404.18090</ele>
+            </trkpt>
+            <trkpt lat="47.397582" lon="9.661690">
+                <ele>403.17246</ele>
+            </trkpt>
+            <trkpt lat="47.398040" lon="9.661581">
+                <ele>403.75865</ele>
+            </trkpt>
+            <trkpt lat="47.398596" lon="9.661326">
+                <ele>404.68160</ele>
+            </trkpt>
+            <trkpt lat="47.398773" lon="9.661174">
+                <ele>405.15570</ele>
+            </trkpt>
+            <trkpt lat="47.399687" lon="9.659309">
+                <ele>407.95569</ele>
+            </trkpt>
+            <trkpt lat="47.399993" lon="9.658826">
+                <ele>407.33254</ele>
+            </trkpt>
+            <trkpt lat="47.400700" lon="9.658107">
+                <ele>406.03995</ele>
+            </trkpt>
+            <trkpt lat="47.405057" lon="9.655057">
+                <ele>404.10361</ele>
+            </trkpt>
+            <trkpt lat="47.405774" lon="9.654614">
+                <ele>407.14504</ele>
+            </trkpt>
+            <trkpt lat="47.407109" lon="9.653879">
+                <ele>409.49175</ele>
+            </trkpt>
+            <trkpt lat="47.407246" lon="9.653789">
+                <ele>409.49175</ele>
+            </trkpt>
+            <trkpt lat="47.407242" lon="9.653670">
+                <ele>409.16549</ele>
+            </trkpt>
+            <trkpt lat="47.407279" lon="9.653621">
+                <ele>409.16549</ele>
+            </trkpt>
+            <trkpt lat="47.407751" lon="9.653527">
+                <ele>409.94195</ele>
+            </trkpt>
+            <trkpt lat="47.407855" lon="9.653457">
+                <ele>410.00392</ele>
+            </trkpt>
+            <trkpt lat="47.408761" lon="9.653486">
+                <ele>409.50792</ele>
+            </trkpt>
+            <trkpt lat="47.408761" lon="9.653486">
+                <ele>409.50792</ele>
+            </trkpt>
+        </trkseg>
+    </trk>
+</gpx>
