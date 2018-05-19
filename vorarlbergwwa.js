@@ -106,7 +106,7 @@ let myMapControl = L.control.layers({
    // "Elektronische Karte Tirol - Winter": tirisWinter,
    // "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
-        "Themenweg Lustenau: alter Rhein": etappe12group,
+        "Spaziergang am Eselschwanz": etappe12group,
         "Start / Ziel": overlayMarker,
     });
 
@@ -114,7 +114,7 @@ myMap.addControl(myMapControl);
 myMap.addLayer(myLayers.geolandbasemap);
 myMap.setView([47.442016, 9.657747],10);
 
-let gpxTrack = new L.GPX("data/lustenau_schmitter.gpx", {
+let gpxTrack = new L.GPX("data/eselschwanz.gpx", {
     async : true,
 }).addTo(etappe12group);
 gpxTrack.on("loaded", function(evt) {
@@ -146,25 +146,25 @@ L.control.scale({
 }).addTo(myMap);
 
 // Start- und Endpunkte der Route als Marker mit Popup, Namen, Wikipedia Link und passenden Icons für Start/Ziel von https://mapicons.mapsmarker.com/
-L.marker([47.408761,9.653486],{
+L.marker([47.466669,9.614721],{
     icon : L.icon({
         iconUrl : 'images/start-race-2.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).bindPopup(
-    '<h3>Grenzübergang Wiesenrain</h3><p><a href="www.lustenauer.net/wiki/Grenzübergang_Wiesenrain"> Start des Spaziergangs</a></p>'
+    '<h3>Tennishalle Höchst</h3><img src="images/Tennishalle_Hoechst.jpg"/>'
 ).addTo(overlayMarker);
 
-//L.marker([47.408761,9,653486],{
-  //  icon : L.icon({
-  //      iconUrl : 'images/finish.png',
-  //      iconAnchor : [16,37],
-  //      popupAnchor : [0,-37],
-  //  })
-//}).bindPopup(
-  //  '<h3>Mühlbach</h3><p><a href="https://de.wikipedia.org/wiki/M%C3%BChlbach_am_Hochk%C3%B6nig"> Mühlbach am Hochkönig</a></p>'
-//).addTo(overlayMarker);
+L.marker([47.464249,9.595875],{
+    icon : L.icon({
+        iconUrl : 'images/finish.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).bindPopup(
+    '<h3>Gaißau Grenze</h3><img src="images/Gaißau_Grenze.jpg"/>'
+).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
