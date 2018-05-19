@@ -106,7 +106,7 @@ let myMapControl = L.control.layers({
    // "Elektronische Karte Tirol - Winter": tirisWinter,
    // "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
-        "Etappe12: Variante Pillersee": etappe12group,
+        "Themenweg Lustenau: alter Rhein": etappe12group,
         "Start / Ziel": overlayMarker,
     });
 
@@ -153,18 +153,18 @@ L.marker([47.408761,9.653486],{
         popupAnchor : [0,-37],
     })
 }).bindPopup(
-    '<h3>Erpfendorf</h3><p><a href="https://www.kitzbueheler-alpen.com/de/erpfendorf/erpfendorf-tirol-ortsinformation-zahlen-fakten.html"> Erpfendorf in Tirol - Ortsinformation</a></p>'
+    '<h3>Grenzübergang Wiesenrain</h3><p><a href="www.lustenauer.net/wiki/Grenzübergang_Wiesenrain"> Start des Spaziergangs</a></p>'
 ).addTo(overlayMarker);
 
-L.marker([47.408761,9,653486],{
-    icon : L.icon({
-        iconUrl : 'images/finish.png',
-        iconAnchor : [16,37],
-        popupAnchor : [0,-37],
-    })
-}).bindPopup(
-    '<h3>Mühlbach</h3><p><a href="https://de.wikipedia.org/wiki/M%C3%BChlbach_am_Hochk%C3%B6nig"> Mühlbach am Hochkönig</a></p>'
-).addTo(overlayMarker);
+//L.marker([47.408761,9,653486],{
+  //  icon : L.icon({
+  //      iconUrl : 'images/finish.png',
+  //      iconAnchor : [16,37],
+  //      popupAnchor : [0,-37],
+  //  })
+//}).bindPopup(
+  //  '<h3>Mühlbach</h3><p><a href="https://de.wikipedia.org/wiki/M%C3%BChlbach_am_Hochk%C3%B6nig"> Mühlbach am Hochkönig</a></p>'
+//).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
