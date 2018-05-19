@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bike Trail Tirol - Etappe 12 - Variante Pillersee</title><!-- TODO: Etappentitel einfügen -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+    <script src="../js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+    <script src="../js/leaflet.gpx/gpx.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+   
+    <script defer src="biketirol.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <h2 class="white">Bike Trail Tirol</h2>
+        <h3 class="white">Griass enk die Wadeln!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -<!-- TODO: anpassen -->
+            <a href="https://sagamol.github.io/biketirol/index.html">https://sagamol.github.io/biketirol/</a><!-- TODO: anpassen -->
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Etappe 12 - Variante Pillersee</h1><!-- TODO: anpassen -->
+
+        <p>Auf dieser Etappe geht es größtenteils entlang des Talbodens, dennoch gilt es auf einer Länge von 42 Kilometern 850 Höhenmeter zu überwinden. Blickfang dieser Variante ist der klare Pillersee, der an heißen Tagen auch Erfrischung bietet.</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Streckenbeschreibung</h2>
+        <p>Man folgt dem Radweg zunächst durch Erpfendorf und in Folge leicht ansteigend bis nach Waidring (1h ab dem Etappenstart). Im Dorfzentrum zweigt man rechts auf die Straße nach St. Ulrich am Pillersee ab. Nach zwei Kilometern geht es rechts über eine kleine Brücke auf dem Radweg weiter, ehe man wieder die Straße überquert und auf einem Fahrweg zum Pillersee radelt. An den Radwegweisern orientiert man sich immer an „St. Ulrich“ und später „Hochfilzen“. Man durchquert die Beckenlandschaft und in südöstlicher Richtung geht es auf einer asphaltierten Straße Richtung Wiesental. Nach ca. einem Kilometer zweigt man links ab und fährt gleich wieder rechts parallel zur Straße auf einem Forstweg vorbei am Wiesensee in den Hochfilzener Weiler Warming (1,5h ab Waidring). Hier zweigt man zwischen den Bauernhöfen „Hörl“ und „Glaagut“ rechts auf die Radroute 17 „Buchensteinwandrunde“ ab. Dieser folgt man nun mehr als 10 Kilometer. Die Strecke führt oberhalb von Fieberbrunn vorbei wieder leicht ansteigend im Wald bis nach St.Jakob in Haus. Auf der Hauptstraße geht es links 100 Meter ab bis zur nächsten Abzweigung rechts auf die Radroute 18 „Kalksteinrunde“ Richtung St. Johann in Tirol auffährt. Den Radwegweisern folgt man nun bis zu den Häusern von Mühlbach auf halbem Weg zwischen Fieberbrunn und St.Johann (1,5h ab Warming). Hier endet die Route bei der Einmündung in die Etappe „Kössen-Kitzbühel“ kurz vor dem Anstieg auf das Kitzbüheler Horn.</p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://www.tirol.at/reisefuehrer/sport/radfahren/biketouren/a-bike-trail-tirol-variante-pillersee">Biketrail Tirol - Variante Pillersee</a>
+            </li>
+            <li>
+                <a href="https://www.pillerseetal.co/sommerurlaub-pillerseetal/biken-radwandern-radfahren/mountainbike-tour-radweg-bikestrecke-radfahren">Mountainbike-Tipps und Radwege im Pillerseetal</a> 
+            </li>
+            <li>
+                <a href="https://www.pillerseetal.co/gesundheit-wohlbefinden-pillerseetal">Wellness & Sport im Pillerseetal</a>
+            </li>
+            <li>
+                <a href="https://www.bergfex.at/sommer/pillerseetal/highlights/">Freizeittipps Pillerseetal</a>
+            </li>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Pillerseetal">Wikipedia: Pillerseetal</a>
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        <a class="back" href="https://jacobusmeow.github.io/biketirol/index.html">
+            <i class="fas fa-arrow-alt-circle-left"></i> vorhergehender Stop</a>
+        <a class="next" href="https://klauswerner.github.io/biketirol/index.html">nächster Stop
+            <i class="fas fa-arrow-alt-circle-right"></i>
+        </a>
+    </div>
+
+</body>
