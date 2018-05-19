@@ -40,33 +40,33 @@ const myLayers = {
         attribution: "Datenquelle: <a href='https://www.basemap.at'>basemap.at</a>",
     }
     ),
-    eKarte_Tirol_Sommer: L.tileLayer(
-        "http://wmts.kartetirol.at/wmts/gdi_base_summer/GoogleMapsCompatible/{z}/{x}/{y}.jpeg80", {
-        attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
-    }
-    ),
-    eKarte_Tirol_Winter: L.tileLayer(
-        "http://wmts.kartetirol.at/wmts/gdi_base_winter/GoogleMapsCompatible/{z}/{x}/{y}.jpeg80", {
-        attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
-    }
-    ),
-    eKarte_Tirol_Ortho: L.tileLayer(
-        "http://wmts.kartetirol.at/wmts/gdi_ortho/GoogleMapsCompatible/{z}/{x}/{y}.jpeg80", {
-        attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
-    }
-    ),
+   // eKarte_Tirol_Sommer: L.tileLayer(
+     //   "http://wmts.kartetirol.at/wmts/gdi_base_summer/GoogleMapsCompatible/{z}/{x}/{y}.jpeg80", {
+       // attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
+   // }
+   // ),
+   // eKarte_Tirol_Winter: L.tileLayer(
+   //     "http://wmts.kartetirol.at/wmts/gdi_base_winter/GoogleMapsCompatible/{z}/{x}/{y}.jpeg80", {
+   //     attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
+   // }
+   // ),
+   // eKarte_Tirol_Ortho: L.tileLayer(
+    //    "http://wmts.kartetirol.at/wmts/gdi_ortho/GoogleMapsCompatible/{z}/{x}/{y}.jpeg80", {
+    //    attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
+    //}
+    //),
     bmapgrau: L.tileLayer(
         "https://{s}.wien.gv.at/basemap/bmapgrau/normal/google3857/{z}/{y}/{x}.png", {
         subdomains: ["maps", "maps1", "maps2", "maps3", "maps4"],
         attribution: "Datenquelle: <a href='https://www.basemap.at'>basemap.at</a>",
     }
     ),
-    gdi_nomenklatur: L.tileLayer(
-        "http://wmts.kartetirol.at/wmts/gdi_nomenklatur/GoogleMapsCompatible/{z}/{x}/{y}.png8", {
-            attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
-            pane: "overlayPane",
-    }
-    ),
+    //gdi_nomenklatur: L.tileLayer(
+    //    "http://wmts.kartetirol.at/wmts/gdi_nomenklatur/GoogleMapsCompatible/{z}/{x}/{y}.png8", {
+    //        attribution: "Datenquelle: <a href='https://www.data.gv.at/katalog/dataset/land-tirol_elektronischekartetirol'>eKarte Tirol</a>",
+    //        pane: "overlayPane",
+    //}
+    //),
     bmaphidpi: L.tileLayer(
         "https://{s}.wien.gv.at/basemap/bmaphidpi/normal/google3857/{z}/{y}/{x}.jpeg", {
         subdomains: ["maps", "maps1", "maps2", "maps3", "maps4"],
@@ -82,18 +82,18 @@ const myLayers = {
 }
 
 // Layergruppen für die Elektronische Karte Tirol definieren
-const tirisSommer = L.layerGroup([
-    myLayers.eKarte_Tirol_Sommer,
-    myLayers.gdi_nomenklatur
-]);
-const tirisWinter = L.layerGroup([
-    myLayers.eKarte_Tirol_Winter,
-    myLayers.gdi_nomenklatur
-]);
-const tirisOrtho = L.layerGroup([
-    myLayers.eKarte_Tirol_Ortho,
-    myLayers.gdi_nomenklatur
-]);
+//const tirisSommer = L.layerGroup([
+  //  myLayers.eKarte_Tirol_Sommer,
+  //  myLayers.gdi_nomenklatur
+//]);
+//const tirisWinter = L.layerGroup([
+  //  myLayers.eKarte_Tirol_Winter,
+  //  myLayers.gdi_nomenklatur
+//]);
+//const tirisOrtho = L.layerGroup([
+  //  myLayers.eKarte_Tirol_Ortho,
+  //  myLayers.gdi_nomenklatur
+//]);
 
 // Baselayer control für OSM, basemap.at, Elektronische Karte Tirol hinzufügen
 let myMapControl = L.control.layers({
@@ -102,9 +102,9 @@ let myMapControl = L.control.layers({
     "basemap.at grau": myLayers.bmapgrau,
     "basemap.at highdpi": myLayers.bmaphidpi,
     "basemap.at Orthofoto": myLayers.bmaporthofoto30cm,
-    "Elektronische Karte Tirol - Sommer": tirisSommer,
-    "Elektronische Karte Tirol - Winter": tirisWinter,
-    "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
+   // "Elektronische Karte Tirol - Sommer": tirisSommer,
+   // "Elektronische Karte Tirol - Winter": tirisWinter,
+   // "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
         "Etappe12: Variante Pillersee": etappe12group,
         "Start / Ziel": overlayMarker,
@@ -112,7 +112,7 @@ let myMapControl = L.control.layers({
 
 myMap.addControl(myMapControl);
 myMap.addLayer(myLayers.geolandbasemap);
-myMap.setView([47.528115, 12.577668], 9);
+myMap.setView([47.442016, 9.657747],10);
 
 let gpxTrack = new L.GPX("data/etappe12.gpx", {
     async : true,
