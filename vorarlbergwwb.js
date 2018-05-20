@@ -146,25 +146,25 @@ L.control.scale({
 }).addTo(myMap);
 
 // Start- und Endpunkte der Route als Marker mit Popup, Namen, Wikipedia Link und passenden Icons für Start/Ziel von https://mapicons.mapsmarker.com/
-L.marker([47.408761,9.653486],{
+L.marker([47.464409,9.595721],{
     icon : L.icon({
-        iconUrl : 'images/start-race-2.png',
+        iconUrl : 'images/start.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
 }).bindPopup(
-    '<h3>Grenzübergang Wiesenrain</h3><p><a href="www.lustenauer.net/wiki/Grenzübergang_Wiesenrain"> Start des Spaziergangs</a></p>'
+    '<h3>Gaißau Grenze</h3><img src="images/Gaißau_Grenze.jpg"/>'
 ).addTo(overlayMarker);
 
-//L.marker([47.408761,9,653486],{
-  //  icon : L.icon({
-  //      iconUrl : 'images/finish.png',
-  //      iconAnchor : [16,37],
-  //      popupAnchor : [0,-37],
-  //  })
-//}).bindPopup(
-  //  '<h3>Mühlbach</h3><p><a href="https://de.wikipedia.org/wiki/M%C3%BChlbach_am_Hochk%C3%B6nig"> Mühlbach am Hochkönig</a></p>'
-//).addTo(overlayMarker);
+L.marker([47.488902,9.585729],{
+    icon : L.icon({
+        iconUrl : 'images/finish.png',
+        iconAnchor : [16,37],
+        popupAnchor : [0,-37],
+    })
+}).bindPopup(
+    '<h3>Gaißau Hafen</h3><img src="images/Gaißau_Hafen.jpg"/>'
+).addTo(overlayMarker);
 
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);
