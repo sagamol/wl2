@@ -106,7 +106,7 @@ let myMapControl = L.control.layers({
    // "Elektronische Karte Tirol - Winter": tirisWinter,
    // "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
-        "Themenweg Lustenau: alter Rhein": etappe12group,
+        "Gaissauer Ried": etappe12group,
         "Start / Ziel": overlayMarker,
     });
 
@@ -114,7 +114,7 @@ myMap.addControl(myMapControl);
 myMap.addLayer(myLayers.geolandbasemap);
 myMap.setView([47.442016, 9.657747],10);
 
-let gpxTrack = new L.GPX("data/lustenau_schmitter.gpx", {
+let gpxTrack = new L.GPX("data/gaissauer_ried.gpx", {
     async : true,
 }).addTo(etappe12group);
 gpxTrack.on("loaded", function(evt) {
