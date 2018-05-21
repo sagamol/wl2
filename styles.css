@@ -17,6 +17,13 @@ body {
     background-repeat: no-repeat;
     height: 360px;
 }
+#headerrad {
+    text-align: center;
+    background-color: dodgerblue;
+    background-image: url('images/headerrad.jpg');
+    background-repeat: no-repeat;
+    height: 480px;
+}
 #header h2 {
     font-size: 4em;
     padding: 1em 0;
