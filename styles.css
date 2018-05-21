@@ -63,6 +63,9 @@ body {
 #footer .next {
     float: right;
 }
+#footer .up {
+    float: middle;
+}
 
 a:link, a:visited {
     color: black;

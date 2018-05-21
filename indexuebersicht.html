@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vorarlberg - Wanderwege</title><!-- TODO: Etappentitel einfügen -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+    <script src="../js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+    <script src="../js/leaflet.gpx/gpx.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+   
+    <script defer src="vorarlbergwwuebersicht.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <h2 class="white">Vorarlberg - Wanderwege</h2>
+        <h3 class="white">Zeavas die Wadeln!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -<!-- TODO: anpassen -->
+            <a href="https://sagamol.github.io/biketirol/index.html">https://sagamol.github.io/biketirol/</a><!-- TODO: anpassen -->
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Spazierwege Lustenau - Rheindelta</h1><!-- TODO: anpassen -->
+
+     <!--    <p><strong>Autorentipp: </strong> Die Diepoldsauer Rheinschleife sieht heute ganz anders aus als bis zum Jahre 1932, als der Rhein in ein begradigtes Bett westlich von Diepoldsau verlegt wurde. Bis dahin war er ein bei Hochwasser oft bedrohlich reißender Fluss, der nicht selten die Talebene überschwemmt hat. Heute hat der Alte Rhein den Charakter eines stillen Grundwassersees, der größtenteils unter Naturschutz gestellt ist. Zugleich ist er eine über die Staatsgrenze zusammenhängende Erholungsoase mit vielen Gelegenheiten für Naturbeobachtungen. <em>Autor: </em>Helmut Tiefenthaler</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+    --> <div id="map"></div>
+
+        <h2>Wegbeschreibungen</h2>
+        <p>Die einzelnen Wegbeschreibungen findet Ihr im Abschnitt Links.</p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="index.html">Lustenau - Schmitter</a>
+            </li>
+            <li>
+                <a href="indexa.html">Höchst - Eselschwanz</a> 
+            </li>
+            <li>
+                <a href="indexb.html">Gaißau - Wetterwinkel</a>
+            </li>
+            <li>
+                <a href="indexc.html">Fußach/Höchst/Gaißau - Rheindeltarunde</a>
+            </li>
+    <!--        <li>
+                <a href="http://www.laendledivers.at/w5/alterrhein.html">Tauchen am alten Rhein</a>
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+     TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+<!--    <div id="footer" class="gray">
+        <a class="back" href="indexc.html">
+            <i class="fas fa-arrow-alt-circle-left"></i> vorhergehender Stop</a>
+        <a class="next" href="indexa.html">
+            <i class="fas fa-arrow-alt-circle-right"></i> nächster Stop</a>
+           </div>
+        -->
+</body>
