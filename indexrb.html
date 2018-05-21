@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vorarlberg - Wanderwege</title><!-- TODO: Etappentitel einfügen -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+    <script src="../js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+    <script src="../js/leaflet.gpx/gpx.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+   
+    <script defer src="vorarlbergradb.js"></script>
+
+</head>
+
+<body>
+    <div id="headerrad">
+        <h2 class="white">Vorarlberg - Radtouren</h2>
+        <h3 class="white">Zeavas die Wadeln!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/userrad.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -<!-- TODO: anpassen -->
+            <a href="https://sagamol.github.io/biketirol/index.html">https://sagamol.github.io/biketirol/</a><!-- TODO: anpassen -->
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Grüne Insel Tour</h1><!-- TODO: anpassen -->
+
+        <p><strong>Autorentipp: </strong> Entdecken Sie die Welt der Rheintaler Riedlandschaften. Die Dornbirner Ache schlängelt sich in zahlreichen Schleifen durch das Ried. Der idyllische Jannersee schmiegt sich sanft in das Landschaftsschutzgebiet Lauteracher Ried.
+            Hier fahren Sie vorbei an weitläufigen Wiesen, Äckern sowie Birken- und Eichenbeständen. Im Bruggerloch, einem ehemaligen Baggersee, ist Badespass für die ganze Familie angesagt. Gestärkt führt Sie der Weg bei Lustenau weiter ins Naherholungsgebiet  Alter Rhein mit schönen Auwäldern, Spazierwegen und Naturbadeplätzen.Das "Natura 2000 - Gebiet Birken - Schwarzes Zeug" ist wegen seiner weiträumigen Moorlandschaft und Streuewiesen ein Schutzgebiet für für zahlreiche gefährdete Arten wie Wachtelkönig, Grosser Brachvogel, Kiebitz oder Bekassine. Für Naturliebhaber absolut Sehenswert!<em>Autor: </em>Unbekannt</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Tourbeschreibung</h2>
+        <p>Von der Rheinbrücke zwischen Fussach und Hard führt der Radweg durch das Harder Ried bis zum Jannersee. Von dort geht es weiter vorbei an der Sportanlage Ried Richtung Dornbirner Ried. Dort führt der Radweg durch das Naturschutzgebiet Birken Schwarzer Zeug.
+            Nachdem Sie das Dornbirner Ried durchquert haben geht es vom Kreisverkehr Dornbirn Süd Richtung Lustenau. Zuerst durch das Natura 2000 Gebiet Gsieg und dann durch das Natura 2000 Obere Mähder. Danach führt die Strecke entlang dem Alten Rhein durch den Naturpark Alter Rhein. Rhein abwärts führt Sie der Radweg dann zurück bis zur Rheinbrücke, zum Ausgangspunkt der Tour.</p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Lustenau">Wikipedia: Lustenau</a>
+            </li>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Alter_Rhein">Wikipedia: Alter Rhein</a> 
+            </li>
+            <li>
+                <a href="https://www.lustenau.at/de/leben-in-lustenau/lustenau-portrait/natur-und-erholung">Natur und Erholung in Lustenau</a>
+            </li>
+            <li>
+                <a href="http://www.fischereiverband-vbg.at/de/fischerei/fischereimoeglichkeiten/alter-rhein">Fischen am alten Rhein</a>
+            </li>
+            <li>
+                <a href="http://www.laendledivers.at/w5/alterrhein.html">Tauchen am alten Rhein</a>
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        <a class="back" href="indexc.html">
+            <i class="fas fa-arrow-alt-circle-left"></i> Fußach/Höchst/Gaißau - Rheindeltarunde</a>
+        <a class="next" href="indexa.html">
+            <i class="fas fa-arrow-alt-circle-right"></i> Höchst - Eselschwanz</a>
+        <a class="up" href="indexuebersicht.html">
+            <i class="fas fa-arrow-alt-circle-up"></i> Spazierwege - Übersicht</a>
+    </div>
+
+</body>
