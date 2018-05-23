@@ -106,49 +106,47 @@ let myMapControl = L.control.layers({
    // "Elektronische Karte Tirol - Winter": tirisWinter,
    // "Elektronische Karte Tirol - Orthophoto": tirisOrtho,
 }, {
-        "Spazierwege": etappe12group,
+        "Spaziergang am Eselschwanz": etappe12group,
         "Start / Ziel": overlayMarker,
     });
 
 myMap.addControl(myMapControl);
 myMap.addLayer(myLayers.geolandbasemap);
-myMap.setView([47.442016, 9.657747],12);
+myMap.setView([47.442016, 9.657747],10);
 
-let gpxTrack = new L.GPX("data/lustenau_schmitter.gpx", {
+let gpxTrack = new L.GPX("data/etappe_esel.gpx", {
     async : true,
-}).addTo(etappe12group);
-let gpxTrack1 = new L.GPX("data/eselschwanz.gpx", {
-    async : true,
-}).addTo(etappe12group);
-let gpxTrack2 = new L.GPX("data/gaissauer_ried.gpx", {
-    async : true,
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    },
     polyline_options : {
-        color : "green",
+        color : "green"
     }
 }).addTo(etappe12group);
-let gpxTrack3 = new L.GPX("data/rheindeltarunde.gpx", {
-    async : true,   // Farbe Klaus fragen
-}).addTo(etappe12group);
-//gpxTrack.on("loaded", function(evt) {
-  //  console.log("get_distance",evt.target.get_distance().toFixed(0))
-  //  console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
-  //  console.log("get_elevation_max",evt.target.get_elevation_max().toFixed(0))
-  //  console.log("get_elevation_gain",evt.target.get_elevation_gain().toFixed(0))
-  //  console.log("get_elevation_loss",evt.target.get_elevation_loss().toFixed(0))
-  //  let laenge = evt.target.get_distance().toFixed(0);
-  //  document.getElementById("laenge").innerHTML = laenge;
-  //  let tiefster_Punkt = evt.target.get_elevation_min().toFixed(0);
-  //  document.getElementById("tiefster_Punkt").innerHTML = tiefster_Punkt;
-  //  let hoechster_Punkt = evt.target.get_elevation_max().toFixed(0);
-  //  document.getElementById("hoechster_Punkt").innerHTML = hoechster_Punkt;
-  //  let aufstieg = evt.target.get_elevation_gain().toFixed(0);
-  //  document.getElementById("aufstieg").innerHTML = aufstieg;
-  //  let abstieg = evt.target.get_elevation_loss().toFixed(0);
-  //  document.getElementById("abstieg").innerHTML = abstieg;
 
-    //myMap.fitBounds(evt.target.getBounds());
-//});
-// myMap.fitBounds(etappe12group,getBounds()); //funktioniert nicht!!! Klaus fragen
+gpxTrack.on("loaded", function(evt) {
+    console.log("get_distance",evt.target.get_distance().toFixed(0))
+    console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
+    console.log("get_elevation_max",evt.target.get_elevation_max().toFixed(0))
+    console.log("get_elevation_gain",evt.target.get_elevation_gain().toFixed(0))
+    console.log("get_elevation_loss",evt.target.get_elevation_loss().toFixed(0))
+    let laenge = evt.target.get_distance().toFixed(0);
+    document.getElementById("laenge").innerHTML = laenge;
+    let tiefster_Punkt = evt.target.get_elevation_min().toFixed(0);
+    document.getElementById("tiefster_Punkt").innerHTML = tiefster_Punkt;
+    let hoechster_Punkt = evt.target.get_elevation_max().toFixed(0);
+    document.getElementById("hoechster_Punkt").innerHTML = hoechster_Punkt;
+    let aufstieg = evt.target.get_elevation_gain().toFixed(0);
+    document.getElementById("aufstieg").innerHTML = aufstieg;
+    let abstieg = evt.target.get_elevation_loss().toFixed(0);
+    document.getElementById("abstieg").innerHTML = abstieg;
+
+    console.log(evt.target)
+    myMap.fitBounds(evt.target.getBounds());
+});
+
 // Maßstabsleiste metrisch
 L.control.scale({           
     maxWidth : 200,        
@@ -158,68 +156,25 @@ L.control.scale({
 }).addTo(myMap);
 
 // Start- und Endpunkte der Route als Marker mit Popup, Namen, Wikipedia Link und passenden Icons für Start/Ziel von https://mapicons.mapsmarker.com/
-L.marker([47.408761,9.653486],{
-    icon : L.icon({
-        iconUrl : 'images/start.png',
-        iconAnchor : [16,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
-
-L.marker([47.393638,9.668647],{
-    icon : L.icon({
-        iconUrl : 'images/finish.png',
-        iconAnchor : [16,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
-
 L.marker([47.466669,9.614721],{
     icon : L.icon({
         iconUrl : 'images/start.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
-}).addTo(overlayMarker);
+}).bindPopup(
+    '<h3>Tennishalle Höchst</h3><img src="images/Tennishalle_Hoechst.jpg"/>'
+).addTo(overlayMarker);
 
 L.marker([47.464249,9.595875],{
     icon : L.icon({
         iconUrl : 'images/finish.png',
-        iconAnchor : [8,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
-
-L.marker([47.464409,9.595721],{
-    icon : L.icon({
-        iconUrl : 'images/start.png',
-        iconAnchor : [24,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
-
-L.marker([47.488902,9.585729],{
-    icon : L.icon({
-        iconUrl : 'images/finish.png',
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
-}).addTo(overlayMarker);
+}).bindPopup(
+    '<h3>Gaißau Grenze</h3><img src="images/Gaißau_Grenze.jpg"/>'
+).addTo(overlayMarker);
 
-L.marker([47.495722,9.627565],{
-    icon : L.icon({
-        iconUrl : 'images/start.png',
-        iconAnchor : [16,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
-
-L.marker([47.500863,9.565542],{
-    icon : L.icon({
-        iconUrl : 'images/finish.png',
-        iconAnchor : [16,37],
-        popupAnchor : [0,-37],
-    })
-}).addTo(overlayMarker);
 // GeoJSON Track als Linie in der Karte einzeichnen und auf Ausschnitt zoomen
 //let geojsonTrack = L.geoJSON(etappe12data).addTo(etappe12group);

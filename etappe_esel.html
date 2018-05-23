@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vorarlberg - Wanderwege</title><!-- TODO: Etappentitel einfügen -->
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../js/leaflet/leaflet.css" />
+    <script src="../js/leaflet/leaflet.js"></script>
+
+    <link rel="stylesheet" href="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.css" />
+    <script src="../js/leaflet.fullscreen/dist/Leaflet.fullscreen.js"></script>
+
+    <script src="../js/leaflet.gpx/gpx.js"></script>
+
+    <link rel="stylesheet" href="styles.css" />
+   
+    <script defer src="scripts/etappe_esel.js"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <h2 class="white">Vorarlberg - Wanderwege</h2>
+        <h3 class="white">Zeavas die Wadeln!</h3>
+    </div>
+
+    <div class="author">
+        <img src="images/user.jpg" alt="Ihr Reiseleiter" /><!-- TODO: anpassen -->
+        <p class="gray">
+            <a href="mailto:christian.hofer@student.uibk.ac.at">Christian Hofer</a> -<!-- TODO: anpassen -->
+            <a href="https://sagamol.github.io/biketirol/index.html">https://sagamol.github.io/biketirol/</a><!-- TODO: anpassen -->
+        </p>
+    </div>
+
+    <hr />
+
+    
+    <div class="article">
+        <h1>Spazierweg Höchst - Gaissau: Eselschwanz</h1><!-- TODO: anpassen -->
+
+        <p><strong>Autorentipp:</strong> Der Eselschwanz ist eine Rheinschleife zwischen Höchst und St. Margrethen. Der jetzt nur mehr schmale Wasserlauf hat viel vom ursprünglichen Charakter einer natürlich wilden Flusslandschaft verloren. Der Name dieser Flussschleife hat übrigens nichts mit einem Esel zu tun. In einer Urkunde von 1369 lesen wir die Benennung „in der Islen“. Damit war eine inselähnlich ins Wasser vorspringende Landzunge gemeint. Auf hochdeutsch müsste hier also von „Inselschwanz“ gesprochen werden.<em> Autor: </em> Vorarlberg Tourismus</p>
+
+        <p><strong>Tourdaten:</strong> Länge <span id="laenge"></span>m, tiefster Punkt <span id="tiefster_Punkt"></span>m, höchster Punkt <span id="hoechster_Punkt"></span>m, Aufstieg <span id="aufstieg"></span>m, Abstieg <span id="abstieg"></span>m.</p>
+
+        <div id="map"></div>
+
+        <h2>Wegbeschreibung</h2>
+        <p>Von der Tennishalle folgt die Route durchgehend dem Radwanderweg, der nahe am Flussufer verläuft. Hier befinden wir uns zunächst im alten Flussbett, das bis zum Jahre 1900 zwischen Kies- und Sandbänken vom Rhein durchflossen war und hier Eselschwanz genannt wird.<br/>Bald führt uns der Weg durch einen Bereich, in dem in den vergangenen Jahren Renaturierungsmaßnahmen mit Amphibienbiotopen, Bepflanzungen und bunten Uferwiesen gelungen sind. Wo wir uns beim Werk Blum der Straßenverbindung Höchst–Gaißau nähern, erreichen wir den alten Rheindamm. Von da verläuft der Weg auf der Dammkrone. Diese bildet eine markante Grenze zwischen einer zum Teil heute noch urig anmutenden Flusslandschaft und dem landwirtschaftlich genutzten Kulturland des Rheindeltas. Im Blick nach vorne haben wir den Dorfrand von Gaißau und über dem Talrand die Hanglagen von dem bereits im Appenzellerland liegenden Walzenhausen. Das letzte Wegstück führt zwischen Wohnbebauungen hindurch zum Grenzübergang Gaißau/Rheineck. Dabei lässt sich nicht überhören, dass auf der anderen Seite des Alten Rheins die Schweizer Rheintalautobahn vorbeiführt.<br/>Nahe am Zoll können wir von der einen oder anderen Einkehrmöglichkeit Gebrauch machen, bevor wir auf derselben Route zum Ausgangspunkt bei der Tennishalle zurückkehren.</p>
+        <h3>Links</h3>
+        <ul>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Höchst_(Vorarlberg)">Wikipedia: Gemeinde Höchst in Vorarlberg</a>
+            </li>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Alter_Rhein_(Fußacher_Durchstich)">Alter Rhein (Fußacher Durchstich)</a> 
+            </li>
+            <li>
+                <a href="www.tourenspuren.at/naturschutzgeb-eselschwanz/">Naturschutzgebiet Eselschwanz</a>
+            </li>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Rheindelta">Wikipedia: Rheindelta</a>
+            </li>
+            <li>
+                <a href="https://de.wikipedia.org/wiki/Gaißau">Wikipedia: Gemeinde Gaißau</a>
+            </li>
+        </ul>
+    </div>
+
+    <hr />
+
+    <!-- TODO: Links anpassen zu den benachbarten Etappen - siehe OLAT Tabelle ... -->
+    <div id="footer" class="gray">
+        <a class="back" href="index.html">
+            <i class="fas fa-arrow-alt-circle-left"></i> Lustenau - Schmitter</a>
+        <a class="next" href="indexb.html">
+            <i class="fas fa-arrow-alt-circle-right"></i> Gaißau - Wetterwinkel</a>
+        <a class="up" href="indexuebersicht.html">
+            <i class="fas fa-arrow-alt-circle-up"></i> Spazierwege - Übersicht</a>
+    </div>
+
+</body>

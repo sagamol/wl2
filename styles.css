@@ -71,14 +71,17 @@ body {
     width: 100%;
     padding: 1em 0 3em 0;
 }
+#footer table {
+    width: 100%;
+}
 #footer .back {
-    float: left;
+    text-align: left;
 }
 #footer .next {
     float: right;
 }
 #footer .up {
-    float: middle;
+    text-align: center;
 }
 
 a:link, a:visited {

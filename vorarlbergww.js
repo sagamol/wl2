@@ -116,7 +116,13 @@ myMap.setView([47.442016, 9.657747],10);
 
 let gpxTrack = new L.GPX("data/lustenau_schmitter.gpx", {
     async : true,
+    marker_options : {
+        startIconUrl : null,
+        endIconUrl : null,
+        shadowUrl : null,
+    }
 }).addTo(etappe12group);
+
 gpxTrack.on("loaded", function(evt) {
     console.log("get_distance",evt.target.get_distance().toFixed(0))
     console.log("get_elevation_min",evt.target.get_elevation_min().toFixed(0))
@@ -152,9 +158,9 @@ L.marker([47.408761,9.653486],{
         iconAnchor : [16,37],
         popupAnchor : [0,-37],
     })
-}).bindPopup(
+}).addTo(overlayMarker).bindPopup(
     '<h3>Grenzübergang Wiesenrain</h3><img src="images/Wiesenrain_Grenze.jpg"/>'
-).addTo(overlayMarker);
+);
 
 L.marker([47.393638,9.668647],{
     icon : L.icon({
